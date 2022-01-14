@@ -21,6 +21,17 @@ namespace MvcUniversity.Tests
         [InlineData("/Plante")]
         [InlineData("/Besoins")]
         [InlineData("/Besoins/Details/1")]
+        [InlineData("/Besoins/Create")]
+        [InlineData("/Besoins/Delete/1")]
+        [InlineData("/Besoins/Edit/1")]
+        [InlineData("/Environnement/Create")]
+        [InlineData("/Environnement/Details/1")]
+        [InlineData("/Environnement/Delete/1")]
+        [InlineData("/Environnement/Edit/1")]
+        [InlineData("/Plante/Create")]
+        [InlineData("/Plante/Details/1")]
+        [InlineData("/Plante/Delete/1")]
+        [InlineData("/Plante/Edit/1")]
 
 
         public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
